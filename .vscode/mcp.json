@@ -1,0 +1,33 @@
+{
+	"servers": {
+		"dk-math": {
+			"command": "/Users/ttdkoc/.local/bin/uv",
+			"args": [
+				"--directory",
+				"/Users/ttdkoc/Documents/dev/workspaces/python/dk_calc",
+				"run",
+				"dk_math.py"
+			]
+		},
+		"my-customer-java": {
+			"command": "java",
+			"args": [
+				"-jar",
+				"/Users/ttdkoc/Documents/dev/workspaces/dis-demo/mcp-customer-service/target/mcp-customer-service-0.0.1-SNAPSHOT.jar"
+			]
+		},
+		"postgres-full": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"mcp-postgres-full-access",
+				"postgresql://postgres:postgres@localhost:5432/postgres"
+			],
+			"env": {
+				"TRANSACTION_TIMEOUT_MS": "60000",
+				"MAX_CONCURRENT_TRANSACTIONS": "5",
+				"PG_STATEMENT_TIMEOUT_MS": "30000"
+			}
+		}
+	}
+}
