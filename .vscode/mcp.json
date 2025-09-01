@@ -1,10 +1,10 @@
 {
 	"servers": {
 		"dk-math": {
-			"command": "/Users/ttdkoc/.local/bin/uv",
+			"command": "~/.local/bin/uv",
 			"args": [
 				"--directory",
-				"/Users/ttdkoc/Documents/dev/workspaces/python/dk_calc",
+				"~/Documents/dev/workspaces/python/dk_calc",
 				"run",
 				"dk_math.py"
 			]
@@ -13,7 +13,7 @@
 			"command": "java",
 			"args": [
 				"-jar",
-				"/Users/ttdkoc/Documents/dev/workspaces/dis-demo/mcp-customer-service/target/mcp-customer-service-0.0.1-SNAPSHOT.jar"
+				"~/Documents/dev/workspaces/dis-demo/mcp-customer-service/target/mcp-customer-service-0.0.1-SNAPSHOT.jar"
 			]
 		},
 		"postgres-full": {
